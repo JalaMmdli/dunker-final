@@ -1869,6 +1869,26 @@ body.no-scroll {
 #elementor-section .swiper-slide:hover {
   border: 1px solid black;
 }
+#elementor-section .row {
+  width: 100% !important;
+}
+
+.elementorSwiper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+
+.elementorSwiper .swiper-wrapper .swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
 @media screen and (max-width: 480px) {
   #featured .featured-container .row .product-card .product-card-details {

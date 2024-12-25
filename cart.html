@@ -167,175 +167,70 @@
         </button>
       </div>
       <!-- Navbar Start -->
-      <nav id="nav" class="d-lg-block d-none position-relative">
+      <nav id="nav" class="d-lg-block d-none">
         <div class="navbar-container">
           <div class="leftside-nav">
-            <a href="./index.html">
-              <div class="logo">
-                <img
-                  src=" https://dunker.qodeinteractive.com/wp-content/uploads/2023/02/Dunker-logo-dark.png"
-                  alt="Dark Dunker"
-                />
-              </div>
-            </a>
+            <div class="logo">
+              <img src="./assets/img/logo.png" alt="Dark Dunker" />
+            </div>
           </div>
           <div class="middle-nav">
             <ul class="navbar-items">
               <li class="navbar-item active">
-                <a href="#" class="navbar-link">HOME</a>
+                <a href="index.html" class="navbar-link">HOME</a>
               </li>
               <li class="navbar-item">
-                <a href="#" class="navbar-link">SHOP</a>
-                <div class="multiple">
-                  <ul class="multiple-subMenu text-uppercase">
-                    <li class="multiple-subMenu-items">
-                      <span href="#" class="multiple-subMenu-heading">
-                        Product Types
-                      </span>
-                      <ul class="multiple-subMenu-item text-uppercase">
-                        <li class="multiple-item">
-                          <a href="#" class="multiple-link">STANDARD</a>
-                        </li>
-                        <li class="multiple-item">
-                          <a href="#" class="multiple-link">VARIABLE</a>
-                        </li>
-                        <li class="multiple-item">
-                          <a href="#" class="multiple-link">GROUPED</a>
-                        </li>
-                        <li class="multiple-item">
-                          <a href="#" class="multiple-link">NEW PRODUCT</a>
-                        </li>
-                        <li class="multiple-item">
-                          <a href="#" class="multiple-link">SALE PRODUCT</a>
-                        </li>
-                        <li class="multiple-item">
-                          <a href="#" class="multiple-link">SOLD PRODUCT</a>
-                        </li>
-                        <li class="multiple-item">
-                          <a href="#" class="multiple-link">FIXED INFO</a>
-                        </li>
-                        <li class="multiple-item">
-                          <a href="#" class="multiple-link">VIRTUAL</a>
-                        </li>
-                      </ul>
-                    </li>
-                    <li class="multiple-subMenu-items">
-                      <span href="#" class="multiple-subMenu-heading">
-                        Contact Us
-                      </span>
-                      <ul class="multiple-subMenu-item text-uppercase">
-                        <li class="multiple-item">
-                          <a href="#" class="multiple-link">Contact Us</a>
-                        </li>
-                        <li class="multiple-item">
-                          <a href="#" class="multiple-link">Our Brands</a>
-                        </li>
-                        <li class="multiple-item">
-                          <a href="#" class="multiple-link">
-                            Terms & Conditions
-                          </a>
-                        </li>
-                        <li class="multiple-item">
-                          <a href="#" class="multiple-link">About Us</a>
-                        </li>
-                      </ul>
-                    </li>
-                    <li class="multiple-subMenu-items">
-                      <span href="#" class="multiple-subMenu-heading">
-                        Contact Us
-                      </span>
-                      <ul class="multiple-subMenu-item text-uppercase">
-                        <li class="multiple-item">
-                          <a href="#" class="multiple-link">Contact Us</a>
-                        </li>
-                        <li class="multiple-item">
-                          <a href="#" class="multiple-link">Our Brands</a>
-                        </li>
-                        <li class="multiple-item">
-                          <a href="#" class="multiple-link">
-                            Terms & Conditions
-                          </a>
-                        </li>
-                        <li class="multiple-item">
-                          <a href="#" class="multiple-link">About Us</a>
-                        </li>
-                      </ul>
-                    </li>
-                  </ul>
-                </div>
+                <a href="shop.html" class="navbar-link">SHOP</a>
+               
               </li>
               <li class="navbar-item">
-                <a href="#" class="navbar-link">OUR TEAM</a>
-                <ul class="subMenu text-uppercase">
-                  <li class="subMenu-item">
-                    <a href="#" class="subMenu-link">Contact Us</a>
-                  </li>
-                  <li class="subMenu-item">
-                    <a href="#" class="subMenu-link">Our Brands</a>
-                  </li>
-                  <li class="subMenu-item">
-                    <a href="#" class="subMenu-link">Terms & Conditions</a>
-                  </li>
-                  <li class="subMenu-item">
-                    <a href="#" class="subMenu-link">About Us</a>
-                  </li>
-                </ul>
+                <a href="ourteam.html" class="navbar-link">OUR TEAM</a>
+              
               </li>
               <li class="navbar-item">
-                <a href="#" class="navbar-link">BLOG</a>
+                <a href="blog.html" class="navbar-link">BLOG</a>
               </li>
               <li class="navbar-item">
-                <a href="#" class="navbar-link">FAQ</a>
+                <a href="xxx.html" class="navbar-link">CONTACT</a>
               </li>
             </ul>
           </div>
           <div class="rightside-nav">
             <div class="action-icons">
-              <span
-                style="cursor: pointer"
-                class="search"
-                onclick="openSearch()"
-              >
+              <span style="cursor: pointer" class="search" onclick="openSearch()">
                 <i class="fa-solid fa-magnifying-glass"></i>
               </span>
-
+  
               <div id="searchOverlay" class="overlay">
-                <span class="closebtn" onclick="closeSearch()"
-                  ><i class="fa-solid fa-xmark"></i
-                ></span>
+                <span class="closebtn" onclick="closeSearch()"><i class="fa-solid fa-xmark"></i></span>
                 <div class="overlay-content">
                   <h1>What are you looking for?</h1>
-                  <input
-                    id="searchInput"
-                    type="text"
-                    placeholder="Search..."
-                    onkeydown="checkEnter(event)"
-                  />
+                  <input id="searchInput" type="text" placeholder="Search..." onkeydown="checkEnter(event)" />
                   <button type="button" onclick="performSearch()">
                     Search
                   </button>
                 </div>
               </div>
-
+  
               <div class="account-container">
-                <span style="cursor: pointer" class="account">
-                  <i class="fa-regular fa-user"></i>
-                </span>
-                <div class="account-dropdown">
-                  <p class="name">John Doe</p>
-                  <p class="position">Software Engineer</p>
-                  <button class="btn">View Profile</button>
-                </div>
-              </div>
-
+                <a href="/logreg.html"> <span style="cursor: pointer" class="account">
+                   <i class="fa-regular fa-user"></i>
+                 </span></a>
+                
+               </div>
+  
               <a href="./wishlist.html">
                 <span class="wish"><i class="fa-regular fa-heart"></i></span>
               </a>
+              <div class="account-container2">
+                <select name="" id="">
+                  <option value="Az">Az</option>
+                  <option value="Eb">En</option>
+                </select>
+              </div>
             </div>
             <div class="basket basket-btn">
-              <span
-                class="basket-icon d-flex justify-content-center align-items-center gap-1"
-              >
+              <span class="basket-icon d-flex justify-content-center align-items-center gap-1">
                 <i class="fa-solid fa-basket-shopping"></i>
                 <span class="count-basket">0</span>
               </span>
@@ -345,7 +240,7 @@
         </div>
       </nav>
       <!-- Navbar End -->
-
+  
       <!-- Mobile Nav Start-->
       <div class="mobile-header d-block d-lg-none">
         <div class="mobile-header-top">
@@ -353,10 +248,7 @@
             <div class="mobile-nav-left">
               <a href="./index.html">
                 <div class="dark-logo">
-                  <img
-                    src="https://dunker.qodeinteractive.com/wp-content/uploads/2023/01/Mobile-logo.png"
-                    alt="DunkerDark"
-                  />
+                  <img src="./assets/img/Mobile-logo.png" alt="DunkerDark" />
                 </div>
               </a>
             </div>
@@ -366,14 +258,17 @@
                   <i class="fa-solid fa-magnifying-glass"></i>
                 </div>
                 <div class="mobile-nav-basket">
-                  <a
-                    href="#"
-                    class="basket-btn basket-icon d-flex justify-content-center align-items-center gap-1"
-                  >
+                  <a href="#" class="basket-btn basket-icon d-flex justify-content-center align-items-center gap-1">
                     <i class="fa-solid fa-basket-shopping"></i>
                     <span class="count-basket">0</span>
                   </a>
                   <div class="basket-container"></div>
+                </div>
+                <div class="account-container2">
+                  <select name="" id="">
+                    <option value="Az">Az</option>
+                    <option value="Eb">En</option>
+                  </select>
                 </div>
                 <div class="menu-btn">
                   <div class="menu-btn__burger"></div>
@@ -385,7 +280,7 @@
         <nav id="mobile-nav" class="mobile-navbar">
           <ul class="mobile-navbar-items">
             <li class="mobile-navbar-item text-uppercase">
-              <a href="#" class="mobile-navbar-link">
+              <a href="index.html" class="mobile-navbar-link">
                 Home
                 <span class="right-chevron">
                   <i class="fa-solid fa-chevron-right"></i>
@@ -393,47 +288,25 @@
               </a>
             </li>
             <li class="mobile-navbar-item text-uppercase">
-              <a href="#" class="mobile-navbar-link">
+              <a href="shop.html" class="mobile-navbar-link">
                 Shop
                 <span class="right-chevron">
                   <i class="fa-solid fa-chevron-right"></i>
                 </span>
               </a>
-              <ul class="mobile-subMenu-items">
-                <li class="mobile-subMenu-item text-uppercase">
-                  <a href="#" id="sup" class="mobile-subMenu-link">
-                    Product Types
-                  </a>
-                </li>
-                <li class="mobile-subMenu-item text-uppercase">
-                  <a href="#" class="mobile-subMenu-link">Contact Us</a>
-                </li>
-                <li class="mobile-subMenu-item text-uppercase">
-                  <a href="#" class="mobile-subMenu-link">Terms & Conditions</a>
-                </li>
-              </ul>
+             
             </li>
             <li class="mobile-navbar-item text-uppercase">
-              <a href="#" class="mobile-navbar-link">
+              <a href="ourteam.html" class="mobile-navbar-link">
                 Our Team
                 <span class="right-chevron">
                   <i class="fa-solid fa-chevron-right"></i>
                 </span>
               </a>
-              <ul class="mobile-subMenu-items">
-                <li class="mobile-subMenu-item">
-                  <a href="#" class="mobile-subMenu-link">Contact Us</a>
-                </li>
-                <li class="mobile-subMenu-item text-uppercase">
-                  <a href="#" class="mobile-subMenu-link">Our Brands</a>
-                </li>
-                <li class="mobile-subMenu-item text-uppercase">
-                  <a href="#" class="mobile-subMenu-link">Terms & Conditions</a>
-                </li>
-              </ul>
+             
             </li>
             <li class="mobile-navbar-item text-uppercase">
-              <a href="#" class="mobile-navbar-link">
+              <a href="blog.html" class="mobile-navbar-link">
                 Blog
                 <span class="right-chevron">
                   <i class="fa-solid fa-chevron-right"></i>
@@ -441,8 +314,8 @@
               </a>
             </li>
             <li class="mobile-navbar-item text-uppercase">
-              <a href="#" class="mobile-navbar-link">
-                Faq
+              <a href="xxx.html" class="mobile-navbar-link">
+                Contact
                 <span class="right-chevron">
                   <i class="fa-solid fa-chevron-right"></i>
                 </span>
@@ -452,7 +325,7 @@
         </nav>
       </div>
       <!-- Mobile Nav End-->
-
+  
       <!-- Basket Sidebar -->
       <div class="basket-sidebar">
         <div class="basket-sidebar-content">
@@ -465,90 +338,7 @@
           <div class="basket-products">
             <div class="basket-product">
               <a class="basket-img" href="#">
-                <img
-                  src="https://dunker.qodeinteractive.com/wp-content/uploads/2022/12/shop-list-filter-1-600x750.jpg"
-                  alt="Product"
-                />
-              </a>
-              <div class="basket-product-content">
-                <a href="#" class="product-category">Fitness</a>
-                <a href="#" class="product-item">WHITE SHIRT</a>
-                <span class="product-cost">$45</span>
-              </div>
-              <a href="#" class="remove-basket">
-                <i class="fa-solid fa-x"></i>
-              </a>
-            </div>
-            <div class="basket-product">
-              <a class="basket-img" href="#">
-                <img
-                  src="https://dunker.qodeinteractive.com/wp-content/uploads/2022/12/shop-list-filter-1-600x750.jpg"
-                  alt="Product"
-                />
-              </a>
-              <div class="basket-product-content">
-                <a href="#" class="product-category">Fitness</a>
-                <a href="#" class="product-item">WHITE SHIRT</a>
-                <span class="product-cost">$45</span>
-              </div>
-              <a href="#" class="remove-basket">
-                <i class="fa-solid fa-x"></i>
-              </a>
-            </div>
-            <div class="basket-product">
-              <a class="basket-img" href="#">
-                <img
-                  src="https://dunker.qodeinteractive.com/wp-content/uploads/2022/12/shop-list-filter-1-600x750.jpg"
-                  alt="Product"
-                />
-              </a>
-              <div class="basket-product-content">
-                <a href="#" class="product-category">Fitness</a>
-                <a href="#" class="product-item">WHITE SHIRT</a>
-                <span class="product-cost">$45</span>
-              </div>
-              <a href="#" class="remove-basket">
-                <i class="fa-solid fa-x"></i>
-              </a>
-            </div>
-            <div class="basket-product">
-              <a class="basket-img" href="#">
-                <img
-                  src="https://dunker.qodeinteractive.com/wp-content/uploads/2022/12/shop-list-filter-1-600x750.jpg"
-                  alt="Product"
-                />
-              </a>
-              <div class="basket-product-content">
-                <a href="#" class="product-category">Fitness</a>
-                <a href="#" class="product-item">WHITE SHIRT</a>
-                <span class="product-cost">$45</span>
-              </div>
-              <a href="#" class="remove-basket">
-                <i class="fa-solid fa-x"></i>
-              </a>
-            </div>
-            <div class="basket-product">
-              <a class="basket-img" href="#">
-                <img
-                  src="https://dunker.qodeinteractive.com/wp-content/uploads/2022/12/shop-list-filter-1-600x750.jpg"
-                  alt="Product"
-                />
-              </a>
-              <div class="basket-product-content">
-                <a href="#" class="product-category">Fitness</a>
-                <a href="#" class="product-item">WHITE SHIRT</a>
-                <span class="product-cost">$45</span>
-              </div>
-              <a href="#" class="remove-basket">
-                <i class="fa-solid fa-x"></i>
-              </a>
-            </div>
-            <div class="basket-product">
-              <a class="basket-img" href="#">
-                <img
-                  src="https://dunker.qodeinteractive.com/wp-content/uploads/2022/12/shop-list-filter-1-600x750.jpg"
-                  alt="Product"
-                />
+                <img src="./assets/img/shop-list-filter-1-600x750.jpg" alt="Product" />
               </a>
               <div class="basket-product-content">
                 <a href="#" class="product-category">Fitness</a>
@@ -565,12 +355,19 @@
             <span class="amount">0</span>
           </div>
           <div class="basket-buttons">
-            <a href="#" class="custom-button">View Cart & Checkout</a>
+            <a href="cart.html" class="custom-button">View Cart & Checkout</a>
           </div>
         </div>
       </div>
+  
+  
     </header>
     <!-- Header Section End -->
+     <br>
+     <br>
+     <br>
+     <br>
+     <br>
 
     <!-- Main Start -->
     <main id="main">
