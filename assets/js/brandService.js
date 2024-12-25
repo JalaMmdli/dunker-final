@@ -5,7 +5,7 @@ export function getAllBrands() {
 }
 
 export function getBrandById(brandId) {
-  return brands.find((brand) => brand.id === brandId);
+  return brands.find((brand) => brand.Id == brandId);
 }
 
 export function createBrand(newbrand) {

@@ -1,8 +1,35 @@
+import { renderBasketModal } from "./basketService.js"
+
+renderBasketModal();
+
+
+
+const basketBtn = document.querySelector(".basket-btn");
+const basketMobileBtn = document.querySelector(".mobile-nav-basket");
+const basketMenu = document.querySelector(".basket-sidebar");
+
+
+  if (basketBtn) {
+      basketBtn.addEventListener("click", (e) => {
+        e.preventDefault();
+        basketMenu.classList.toggle("active");
+      });
+    }
+  
+    if (basketMobileBtn) {
+      basketMobileBtn.addEventListener("click", (e) => {
+        e.preventDefault();
+        basketMenu.classList.toggle("active");
+      });
+    }
+
+
 //Burger Menu Toggle and Close Discount Message
 const menuBtn = document.querySelector('.menu-btn')
 const mobileNavMenu = document.getElementById('mobile-nav')
 const removeBtn = document.querySelector('.close-btn')
 const discountMessage = document.querySelector('.discount-message')
+
 
 removeBtn.addEventListener('click', e => {
   discountMessage.classList.remove('d-lg-block')
@@ -159,26 +186,7 @@ window.addEventListener('scroll', function () {
 
 updateNavbar()
 
-//Open Basket Menu
-const basketBtn = document.querySelector('.basket-btn')
-const basketMobileBtn = document.querySelector('.mobile-nav-basket')
-const basketMenu = document.querySelector('.basket-sidebar')
-const basketClose = document.querySelector('.button-close')
 
-basketBtn.addEventListener('click', e => {
-  e.preventDefault()
-  basketMenu.classList.toggle('active')
-})
-
-basketMobileBtn.addEventListener('click', e => {
-  e.preventDefault()
-  basketMenu.classList.toggle('active')
-})
-
-basketClose.addEventListener('click', e => {
-  e.preventDefault()
-  basketMenu.classList.remove('active')
-})
 
 //Product Set Video and Close Events
 const videoLink = document.getElementById('video-link')

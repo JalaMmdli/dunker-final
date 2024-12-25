@@ -278,82 +278,32 @@
   <br>
 
 
-  <!-- Main -->
-  <main id="main">
-    <div class="container my-4">
-      <div class="card border-0   smaller-card">
-        <img src="./assets/img/Blog-Img-1.jpg" class="card-img-top smaller-img" alt="Ideas for Action">
-        <div class="card-body">
-          <div class="d-flex justify-content-between text-muted mb-2">
-            <a href="#" class="text-decoration-none bigger-text">SPORT</a>
-            <a href="#" class="text-decoration-none bigger-text">December 9, 2022</a>
+  <br />
+  <br />
+  <br />
+  <br />
+  <main>
+      <!-- Breadcrumb Navigation Start -->
+      <nav id="breadcrumb">
+          <span><a asp-action="Index" asp-controller="Home">Home</a></span>
+          <span class="line">|</span>
+          <span><a asp-action="Index" class="text-dark">Order</a></span>
+      </nav>
+      <!-- Breadcrumb Navigation End -->
+      <!-- Wishlist Section Start -->
+      <section id="wishlist">
+          <div class="product-wishlist">
+              <h2>OrderTitle</h2>
           </div>
-          <h1 style="font-size: 50px; font-weight: 640;" class="card-title bigger-title">IDEAS FOR ACTION</h1>
-          <p class="card-text mt-2 bigger-text">
-            Tristique risus feugiat fermentum eget estorem. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
-            do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-          </p> 
-          <a href="#" class="mt-5 custom-button ">Read More</a> 
-        </div>
-
-      </div>
-    </div>
-    <div class="container my-4 mt-5">
-      <div class="card border-0   smaller-card">
-        <img src="https://dunker.qodeinteractive.com/wp-content/uploads/2022/12/Blog-Img-4.jpg" class="card-img-top smaller-img" alt="Ideas for Action">
-        <div class="card-body">
-          <div class="d-flex justify-content-between text-muted mb-2">
-            <a href="#" class="text-decoration-none bigger-text">SPORT</a>
-            <a href="#" class="text-decoration-none bigger-text">December 9, 2022</a>
-          </div>
-          <h1 style="font-size: 50px; font-weight: 640;" class="card-title bigger-title">IDEAS FOR ACTION</h1>
-          <p class="card-text mt-2 bigger-text">
-            Tristique risus feugiat fermentum eget estorem. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
-            do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-          </p> 
-          <a href="#" class="mt-5 custom-button ">Read More</a> 
-        </div>
-
-      </div>
-    </div>
-    <div class="container my-4 mt-5">
-      <div class="card border-0   smaller-card">
-        <img src="https://dunker.qodeinteractive.com/wp-content/uploads/2022/12/Blog-Img-3-1.jpg" class="card-img-top smaller-img" alt="Ideas for Action">
-        <div class="card-body">
-          <div class="d-flex justify-content-between text-muted mb-2">
-            <a href="#" class="text-decoration-none bigger-text">SPORT</a>
-            <a href="#" class="text-decoration-none bigger-text">December 9, 2022</a>
-          </div>
-          <h1 style="font-size: 50px; font-weight: 640;" class="card-title bigger-title">IDEAS FOR ACTION</h1>
-          <p class="card-text mt-2 bigger-text">
-            Tristique risus feugiat fermentum eget estorem. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
-            do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-          </p> 
-          <a href="#" class="mt-5 custom-button ">Read More</a> 
-        </div>
-
-      </div>
-    </div>
-    <div class="container my-4 mt-5">
-      <div class="card border-0   smaller-card">
-        <img src="https://dunker.qodeinteractive.com/wp-content/uploads/2022/12/Blog-Img-2.jpg" class="card-img-top smaller-img" alt="Ideas for Action">
-        <div class="card-body">
-          <div class="d-flex justify-content-between text-muted mb-2">
-            <a href="#" class="text-decoration-none bigger-text">SPORT</a>
-            <a href="#" class="text-decoration-none bigger-text">December 9, 2022</a>
-          </div>
-          <h1 style="font-size: 50px; font-weight: 640;" class="card-title bigger-title">IDEAS FOR ACTION</h1>
-          <p class="card-text mt-2 bigger-text">
-            Tristique risus feugiat fermentum eget estorem. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
-            do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-          </p> 
-          <a href="#" class="mt-5 custom-button ">Read More</a> 
-        </div>
-
-      </div>
-    </div>
+  
+       
+              <div class="wishlist-title text-center py-4 border border-top-1 border-bottom-1">
+                  <p class="m-0 fw-bold">NotFoundItem</p>
+              </div>
+   
+            
+      </section>
   </main>
-
   <!-- Footer Start -->
   <footer id="footer">
     <div class="content">
@@ -466,7 +416,6 @@
   <!-- SwiperJS -->
   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
-  <script src="./assets/js/productCardSlider.js"></script>
   <!-- Split Type  -->
   <script src="
     https://cdn.jsdelivr.net/npm/split-type@0.3.4/umd/index.min.js
@@ -484,6 +433,7 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.6.1/axios.min.js"></script>
 
   <!-- generate card js  -->
+  <script src="./assets/js/order.js" type="module"></script>
   <script src="./assets/js/script.js" type="module"></script>
 </body>
 

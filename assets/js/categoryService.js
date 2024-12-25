@@ -5,7 +5,7 @@ export function getAllCategories() {
 }
 
 export function getCategoryById(categoryId) {
-  return categories.find((category) => category.id === categoryId);
+  return categories.find((category) => category.Id == categoryId);
 }
 
 export function createCategory(newcategory) {

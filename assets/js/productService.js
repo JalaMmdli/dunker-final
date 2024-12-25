@@ -5,7 +5,8 @@ export function getAllProducts() {
 }
 
 export function getProductById(productId) {
-  return products.find((product) => product.id === productId);
+  const product = products.find((p) => p.Id == productId);
+  return product;
 }
 
 export function createProduct(newProduct) {
@@ -37,7 +38,13 @@ export function deleteProduct(productId) {
   return null;
 }
 
-export function filterProducts(brandIds, categoryIds, search) {
+export function filterProducts(
+  brandIds,
+  categoryIds,
+  search,
+  minPrice,
+  maxPrice
+) {
   let filteredProducts = products;
 
   if (categoryIds.length > 0) {
@@ -58,27 +65,38 @@ export function filterProducts(brandIds, categoryIds, search) {
     );
   }
 
+  if (minPrice != 0) {
+    filteredProducts = filteredProducts.filter((x) => x.Price > minPrice);
+  }
+
+  if (maxPrice < 250) {
+    filteredProducts = filteredProducts.filter((x) => x.Price < maxPrice);
+  }
+
   return filteredProducts;
 }
-export function sortProducts(sortedProducts,sort) {
-    // Create a copy of the array to avoid modifying the original
+export function sortProducts(sortedProducts, sort) {
 
-    if(sortProducts.length==0)
-        return [];
+  if (sortProducts.length == 0) return [];
 
-    switch (sort) {
-      case "0": // No sorting, return original order
-        return sortedProducts;
-  
-        
-            case "1": // Sort by price in descending order
-              return sortedProducts.sort((a, b) => b.Price - a.Price);
-        
-      case "2": // Sort by price in ascending order
-        return sortedProducts.sort((a, b) => a.Price - b.Price);
+  switch (sort) {
+    case "0":
+      return sortedProducts;
 
-      default: // Default case, return the original order
-        return sortedProducts;
-    }
+    case "1": 
+      return sortedProducts.sort((a, b) => b.Price - a.Price);
+
+    case "2": 
+      return sortedProducts.sort((a, b) => a.Price - b.Price);
+
+    default:
+      return sortedProducts;
   }
-  
+}
+
+export function getTop8ExpensiveProducts() {
+  const sortedProducts = products.sort((a, b) => b.Price - a.Price);
+
+  return sortedProducts.slice(0, 8);
+}
+
