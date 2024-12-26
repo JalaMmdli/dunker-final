@@ -59,7 +59,7 @@ function renderProducts(products) {
                             style="width: 251px; margin-right: 30px"
                           >
                             <img
-                              src="/assets/img/${image.Image}"
+                              src="./assets/img/${image.Image}"
                               alt="productImg"
                             />
                           </div>

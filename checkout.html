@@ -63,225 +63,203 @@
 </head>
 
 <body>
-  <header id="header">
-    <div class="discount-message d-lg-block d-none">
-      <a href="#" class="message">
-        10% DISCOUNT FOR REGISTERED USERS & FREE SHIPPING FOR ORDERS OVER $70
-        PLUS FREE RETURNS
-      </a>
-      <button class="close-btn">
-        <i class="fa-solid fa-xmark"></i>
-      </button>
-    </div>
-    <!-- Navbar Start -->
-    <nav id="nav" class="d-lg-block d-none">
-      <div class="navbar-container">
-        <div class="leftside-nav">
-          <div class="logo">
-            <img src="./assets/img/logo.png" alt="Dark Dunker" />
-          </div>
+    <header id="header">
+        <div class="discount-message d-lg-block d-none">
+          <a href="#" class="message">
+            10% DISCOUNT FOR REGISTERED USERS & FREE SHIPPING FOR ORDERS OVER $70
+            PLUS FREE RETURNS
+          </a>
+          <button class="close-btn">
+            <i class="fa-solid fa-xmark"></i>
+          </button>
         </div>
-        <div class="middle-nav">
-          <ul class="navbar-items">
-            <li class="navbar-item active">
-              <a href="index.html" class="navbar-link">HOME</a>
-            </li>
-            <li class="navbar-item">
-              <a href="shop.html" class="navbar-link">SHOP</a>
+        <!-- Navbar Start -->
+        <nav id="nav" class="d-lg-block d-none">
+          <div class="navbar-container">
+            <div class="leftside-nav">
+              <div class="logo">
+                <img src="./assets/img/logo.png" alt="Dark Dunker" />
+              </div>
+            </div>
+            <div class="middle-nav">
+              <ul class="navbar-items">
+                <li class="navbar-item active">
+                  <a href="index.html" class="navbar-link">HOME</a>
+                </li>
+                <li class="navbar-item">
+                  <a href="shop.html" class="navbar-link">SHOP</a>
+                 
+                </li>
+                <li class="navbar-item">
+                  <a href="blog.html" class="navbar-link">BLOG</a>
+                </li>
+                <li class="navbar-item">
+                  <a href="contact.html" class="navbar-link">CONTACT</a>
+                </li>
+              </ul>
+            </div>
+            <div class="rightside-nav">
+              <div class="action-icons">
              
-            </li>
-            <li class="navbar-item">
-              <a href="ourteam.html" class="navbar-link">OUR TEAM</a>
-            
-            </li>
-            <li class="navbar-item">
-              <a href="blog.html" class="navbar-link">BLOG</a>
-            </li>
-            <li class="navbar-item">
-              <a href="xxx.html" class="navbar-link">CONTACT</a>
-            </li>
-          </ul>
-        </div>
-        <div class="rightside-nav">
-          <div class="action-icons">
-            <span style="cursor: pointer" class="search" onclick="openSearch()">
-              <i class="fa-solid fa-magnifying-glass"></i>
-            </span>
-
-            <div id="searchOverlay" class="overlay">
-              <span class="closebtn" onclick="closeSearch()"><i class="fa-solid fa-xmark"></i></span>
-              <div class="overlay-content">
-                <h1>What are you looking for?</h1>
-                <input id="searchInput" type="text" placeholder="Search..." onkeydown="checkEnter(event)" />
-                <button type="button" onclick="performSearch()">
-                  Search
-                </button>
-              </div>
-            </div>
-            <div class="account-container">
-              <a href="/logreg.html"> <span style="cursor: pointer" class="account">
-                 <i class="fa-regular fa-user"></i>
-               </span></a>
+    
+    
+                <div class="account-container">
+                  <span style="cursor: pointer" class="account">
+                    <i class="fa-regular fa-user"></i>
+                  </span>
+                  <div style="text-align: center;" class="account-dropdown">
+                   
+                  </div>
+                </div>
+    
               
-             </div>
-
-            <a href="./wishlist.html">
-              <span class="wish"><i class="fa-regular fa-heart"></i></span>
-            </a>
-            <div class="account-container2">
-              <select name="" id="">
-                <option value="Az">Az</option>
-                <option value="Eb">En</option>
-              </select>
-            </div>
-          </div>
-          <div class="basket basket-btn">
-            <span class="basket-icon d-flex justify-content-center align-items-center gap-1">
-              <i class="fa-solid fa-basket-shopping"></i>
-              <span class="count-basket">0</span>
-            </span>
-            <div class="basket-container"></div>
-          </div>
-        </div>
-      </div>
-    </nav>
-    <!-- Navbar End -->
-
-    <!-- Mobile Nav Start-->
-    <div class="mobile-header d-block d-lg-none">
-      <div class="mobile-header-top">
-        <div class="mobile-nav-container">
-          <div class="mobile-nav-left">
-            <a href="./index.html">
-              <div class="dark-logo">
-                <img src="./assets/img/Mobile-logo.png" alt="DunkerDark" />
+    
+                <a href="./wishlist.html">
+                  <span class="wish"><i class="fa-regular fa-heart"></i></span>
+                </a>
+    
+    
+             
+                <div class="account-container2">
+                  <select name="" id="">
+                    <option value="Az">Az</option>
+                    <option value="Eb">En</option>
+                  </select>
+                </div>
               </div>
-            </a>
-          </div>
-          <div class="mobile-nav-right">
-            <div class="mobile-nav-actions">
-              <div class="account-container">
-                <a href="/logreg.html"> <span style="cursor: pointer" class="account">
-                   <i class="fa-regular fa-user"></i>
-                 </span></a>
-                
-               </div>
-              <div class="mobile-nav-basket">
-                <a href="#" class="basket-btn basket-icon d-flex justify-content-center align-items-center gap-1">
+              <div class="basket basket-btn">
+                <span class="basket-icon d-flex justify-content-center align-items-center gap-1">
                   <i class="fa-solid fa-basket-shopping"></i>
                   <span class="count-basket">0</span>
-                </a>
+                </span>
                 <div class="basket-container"></div>
               </div>
-              <div class="account-container2">
-                <select name="" id="">
-                  <option value="Az">Az</option>
-                  <option value="Eb">En</option>
-                </select>
+            </div>
+          </div>
+        </nav>
+        <!-- Navbar End -->
+    
+        <!-- Mobile Nav Start-->
+        <div class="mobile-header d-block d-lg-none">
+          <div class="mobile-header-top">
+            <div class="mobile-nav-container">
+              <div class="mobile-nav-left">
+                <a href="./index.html">
+                  <div class="dark-logo">
+                    <img src="./assets/img/Mobile-logo.png" alt="DunkerDark" />
+                  </div>
+                </a>
               </div>
-              <div class="menu-btn">
-                <div class="menu-btn__burger"></div>
+              <div class="mobile-nav-right">
+                <div class="mobile-nav-actions">
+                  <div class="account-container">
+                    <a href="/logreg.html"> <span style="cursor: pointer" class="account">
+                       <i class="fa-regular fa-user"></i>
+                     </span></a>
+                    
+                   </div>
+                  <div class="mobile-nav-basket">
+                    <a href="#" class="basket-btn basket-icon d-flex justify-content-center align-items-center gap-1">
+                      <i class="fa-solid fa-basket-shopping"></i>
+                      <span class="count-basket">0</span>
+                    </a>
+                    <div class="basket-container"></div>
+                  </div>
+                  <div class="account-container2">
+                    <select name="" id="">
+                      <option value="Az">Az</option>
+                      <option value="Eb">En</option>
+                    </select>
+                  </div>
+                  <div class="menu-btn">
+                    <div class="menu-btn__burger"></div>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
+          <nav id="mobile-nav" class="mobile-navbar">
+            <ul class="mobile-navbar-items">
+              <li class="mobile-navbar-item text-uppercase">
+                <a href="index.html" class="mobile-navbar-link">
+                  Home
+                  <span class="right-chevron">
+                    <i class="fa-solid fa-chevron-right"></i>
+                  </span>
+                </a>
+              </li>
+              <li class="mobile-navbar-item text-uppercase">
+                <a href="shop.html" class="mobile-navbar-link">
+                  Shop
+                  <span class="right-chevron">
+                    <i class="fa-solid fa-chevron-right"></i>
+                  </span>
+                </a>
+               
+              </li>
+              <li class="mobile-navbar-item text-uppercase">
+                <a href="blog.html" class="mobile-navbar-link">
+                  Blog
+                  <span class="right-chevron">
+                    <i class="fa-solid fa-chevron-right"></i>
+                  </span>
+                </a>
+              </li>
+              <li class="mobile-navbar-item text-uppercase">
+                <a href="contact.html" class="mobile-navbar-link">
+                  Contact
+                  <span class="right-chevron">
+                    <i class="fa-solid fa-chevron-right"></i>
+                  </span>
+                </a>
+              </li>
+            </ul>
+          </nav>
         </div>
-      </div>
-      <nav id="mobile-nav" class="mobile-navbar">
-        <ul class="mobile-navbar-items">
-          <li class="mobile-navbar-item text-uppercase">
-            <a href="index.html" class="mobile-navbar-link">
-              Home
-              <span class="right-chevron">
-                <i class="fa-solid fa-chevron-right"></i>
-              </span>
-            </a>
-          </li>
-          <li class="mobile-navbar-item text-uppercase">
-            <a href="shop.html" class="mobile-navbar-link">
-              Shop
-              <span class="right-chevron">
-                <i class="fa-solid fa-chevron-right"></i>
-              </span>
-            </a>
-           
-          </li>
-          <li class="mobile-navbar-item text-uppercase">
-            <a href="ourteam.html" class="mobile-navbar-link">
-              Our Team
-              <span class="right-chevron">
-                <i class="fa-solid fa-chevron-right"></i>
-              </span>
-            </a>
-           
-          </li>
-          <li class="mobile-navbar-item text-uppercase">
-            <a href="blog.html" class="mobile-navbar-link">
-              Blog
-              <span class="right-chevron">
-                <i class="fa-solid fa-chevron-right"></i>
-              </span>
-            </a>
-          </li>
-          <li class="mobile-navbar-item text-uppercase">
-            <a href="xxx.html" class="mobile-navbar-link">
-              Contact
-              <span class="right-chevron">
-                <i class="fa-solid fa-chevron-right"></i>
-              </span>
-            </a>
-          </li>
-        </ul>
-      </nav>
-    </div>
-    <!-- Mobile Nav End-->
-
-    <!-- Basket Sidebar -->
-    <div class="basket-sidebar">
-      <div class="basket-sidebar-content">
-        <div class="basket-sidebar-header">
-          <h4>Shopping Cart</h4>
-          <a href="#" class="button-close mb-2">
-            <i class="fa-solid fa-x"></i>
-          </a>
-        </div>
-        <div class="basket-products">
-          <div class="basket-product">
-            <a class="basket-img" href="#">
-              <img src="./assets/img/shop-list-filter-1-600x750.jpg" alt="Product" />
-            </a>
-            <div class="basket-product-content">
-              <a href="#" class="product-category">Fitness</a>
-              <a href="#" class="product-item">WHITE SHIRT</a>
-              <span class="product-cost">$45</span>
+        <!-- Mobile Nav End-->
+    
+        <!-- Basket Sidebar -->
+        <div class="basket-sidebar">
+          <div class="basket-sidebar-content">
+            <div class="basket-sidebar-header">
+              <h4>Shopping Cart</h4>
+              <a href="#" class="button-close mb-2">
+                <i class="fa-solid fa-x"></i>
+              </a>
             </div>
-            <a href="#" class="remove-basket">
-              <i class="fa-solid fa-x"></i>
-            </a>
+            <div class="basket-products">
+              <div class="basket-product">
+                <a class="basket-img" href="#">
+                  <img src="./assets/img/shop-list-filter-1-600x750.jpg" alt="Product" />
+                </a>
+                <div class="basket-product-content">
+                  <a href="#" class="product-category">Fitness</a>
+                  <a href="#" class="product-item">WHITE SHIRT</a>
+                  <span class="product-cost">$45</span>
+                </div>
+                <a href="#" class="remove-basket">
+                  <i class="fa-solid fa-x"></i>
+                </a>
+              </div>
+            </div>
+            <div class="basket-total">
+              <span>Subtotal:</span>
+              <span class="amount">0</span>
+            </div>
+            <div class="basket-buttons">
+              <a href="checkout.html" class="custom-button">View Cart & Checkout</a>
+            </div>
           </div>
         </div>
-        <div class="basket-total">
-          <span>Subtotal:</span>
-          <span class="amount">0</span>
-        </div>
-        <div class="basket-buttons">
-          <a href="cart.html" class="custom-button">View Cart & Checkout</a>
-        </div>
-      </div>
-    </div>
+    
+    
+      </header>
+  <br>
+  <br>
+  <br>
+  <br>
+  
 
-
-  </header>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-
-
-  <br />
-  <br />
-  <br />
-  <br />
   <main>
       <!-- Breadcrumb Navigation Start -->
       <nav id="breadcrumb">
