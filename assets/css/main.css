@@ -3091,6 +3091,7 @@ body.no-scroll {
     .order-summary-section,
     .checkout-form-section {
         margin-right: 0;
+        width: 100%;
         /* Removes margin when stacked */
     }
 }
